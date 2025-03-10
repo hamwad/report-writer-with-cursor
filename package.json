@@ -1,15 +1,24 @@
 {
-  "name": "encore-ts-starter",
+  "name": "pooley-report-writer",
   "private": true,
   "version": "0.0.1",
-  "description": "Encore Typescript Starter",
+  "description": "AI Report Writer",
   "license": "MPL-2.0",
   "type": "module",
+  "scripts": {
+    "db:generate": "npx drizzle-kit generate",
+    "db:studio": "drizzle-kit studio --port 3000 --verbose"
+  },
   "devDependencies": {
     "@types/node": "^20.5.7",
+    "@types/uuid": "^10.0.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "encore.dev": "^1.46.6"
+    "drizzle-kit": "^0.30.5",
+    "drizzle-orm": "^0.40.0",
+    "encore.dev": "^1.46.6",
+    "pg": "^8.13.3",
+    "short-uuid": "^5.2.0"
   }
 }
