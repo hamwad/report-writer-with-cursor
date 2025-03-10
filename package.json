@@ -6,6 +6,8 @@
   "license": "MPL-2.0",
   "type": "module",
   "scripts": {
+    "build": "npm run build --prefix vue-frontend",
+    "deploy": "npm run build && encore run",
     "db:generate": "npx drizzle-kit generate",
     "db:studio": "drizzle-kit studio --port 3000 --verbose"
   },
