@@ -4,15 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "deploy": "npm run build && encore deploy",
+    "dev": "vite --port 5173 --strictPort",
+    "build": "tsc && vite build",
     "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix",
-    "format": "prettier --write src/",
-    "gen:client": "encore gen client --output=./src/lib/client.ts --env=local"
+    "gen": "encore gen client --output=./src/lib/client.ts --env=local"
   },
   "dependencies": {
     "pinia": "^3.0.1",

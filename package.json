@@ -6,21 +6,19 @@
   "license": "MPL-2.0",
   "type": "module",
   "scripts": {
-    "build": "npm run build --prefix vue-frontend",
-    "deploy": "npm run build && encore run",
     "db:generate": "npx drizzle-kit generate",
     "db:studio": "drizzle-kit studio --port 3000 --verbose"
   },
   "devDependencies": {
     "@types/node": "^20.5.7",
     "@types/uuid": "^10.0.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "drizzle-kit": "^0.30.5",
+    "short-uuid": "^5.2.0"
   },
   "dependencies": {
-    "drizzle-kit": "^0.30.5",
     "drizzle-orm": "^0.40.0",
     "encore.dev": "^1.46.6",
-    "pg": "^8.13.3",
-    "short-uuid": "^5.2.0"
+    "pg": "^8.13.3"
   }
 }
