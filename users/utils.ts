@@ -10,12 +10,12 @@ export const getOffset = (page: number, size: number): number => {
   return size * (page - 1);
 };
 
-export const paginatedData = (params: PaginatedParams): Paginated => {
+export const paginatedData = (params?: PaginatedParams): Paginated => {
   const response = {
-    current: params.page,
-    pageSize: params.size,
-    totalPages: Math.ceil(params.count / params.size),
-    count: params.count,
+    current: params?.page ?? 1,
+    pageSize: params?.size ?? 1,
+    totalPages: params ? Math.ceil(params?.count / params?.size) : 1,
+    count: params?.count ?? 0,
   };
   return response;
 };

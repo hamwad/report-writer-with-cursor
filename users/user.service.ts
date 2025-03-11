@@ -53,7 +53,7 @@ const UserService = {
       result = await db
         .select()
         .from(users)
-        .orderBy(asc(users.name)) // order by is mandatory
+        .orderBy(asc(users.name)) // `orderBy` is mandatory
         .limit(limit) // the number of rows to return
         .offset(offset);
       const total = await db.$count(users);

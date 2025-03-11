@@ -7,6 +7,6 @@
     "dev": "vite --port 5173 --strictPort",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "gen": "encore gen client --output=./src/lib/client.ts --env=local"
+    "gen:client": "encore gen client --output=./src/lib/client.ts --env=local"
   }
 }
