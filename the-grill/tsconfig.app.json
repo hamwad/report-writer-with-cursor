@@ -1,0 +1,22 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts", 
+    "src/**/*", 
+    "src/**/*.vue", 
+    "./components.d.ts", 
+    "./typed-router.d.ts", 
+    "./auto-imports.d.ts", "./"
+  ],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "composite": true,
+    "baseUrl": ".",
+    "moduleResolution": "Bundler",
+    "lib": ["es2022", "dom"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}

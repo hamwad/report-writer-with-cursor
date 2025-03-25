@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@utility container {
+  margin: auto;
+  padding: 2rem;
+}
+
+@theme {
+  --font-russo: 'Russo One', 'sans-serif';
+  --font-opensans: 'Open Sans', 'sans-serif';
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-medium font-russo;
+  }
+
+  h1 {
+    font-size: var(--text-3xl);
+  }
+
+  h2 {
+    font-size: var(--text-2xl);
+  }
+}

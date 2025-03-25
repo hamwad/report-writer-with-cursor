@@ -51,8 +51,8 @@ export const list = api(
     page,
     limit,
   }: {
-    page?: number;
-    limit?: number;
+    page: number;
+    limit: number;
   }): Promise<UserResponse> => {
     try {
       const result = await UserService.find(page, limit);

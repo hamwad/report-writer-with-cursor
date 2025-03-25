@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Russo+One&display=swap');
+@import url('primevue.css');
+@import url('tailwind.css');
+
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --font-family-headings: 'Russo One', sans-serif;
+  --font-size: 14px;
+}
+
+:root:not(.p-dark) {
+  --text-primary: #374151;
+  --text-secondary: #71717a;
+}
+
+:root.p-dark {
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-primary);
+}

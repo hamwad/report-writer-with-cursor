@@ -23,7 +23,7 @@ const UserService = {
       .returning();
     return {
       success: true,
-      result: user,
+      result: [user],
     };
   },
 
@@ -41,7 +41,7 @@ const UserService = {
     }
     return {
       success: true,
-      result: updateUser,
+      result: [updateUser],
     };
   },
 
@@ -82,7 +82,7 @@ const UserService = {
     }
     return {
       success: true,
-      result: user,
+      result: [user],
     };
   },
 

@@ -30,6 +30,6 @@ export interface Paginated {
 export interface UserResponse {
   success: boolean;
   message?: string;
-  result?: UserDto | UserDto[];
+  result?: UserDto[];
   pagination?: Paginated;
 }

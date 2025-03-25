@@ -13,7 +13,7 @@ export const getOffset = (page: number, size: number): number => {
 export const paginatedData = (params?: PaginatedParams): Paginated => {
   const response = {
     current: params?.page ?? 1,
-    pageSize: params?.size ?? 1,
+    pageSize: params?.size ?? 20,
     totalPages: params ? Math.ceil(params?.count / params?.size) : 1,
     count: params?.count ?? 0,
   };
