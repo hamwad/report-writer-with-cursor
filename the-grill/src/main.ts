@@ -5,7 +5,6 @@ import { createPinia } from 'pinia'
 import { VueQueryPlugin } from '@tanstack/vue-query'
 import queryClient from './api/queryClient'
 import PrimeVue from 'primevue/config'
-import 'primevue/resources/themes/aura-light-green/theme.css'
 import App from './App.vue'
 import router from './router'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -21,6 +20,10 @@ app.use(PrimeVue, {
   unstyled: false,
   pt: {
     // Pass Through options
+  },
+  theme: {
+    name: 'aura-light-green',
+    dark: false,
   },
 })
 
