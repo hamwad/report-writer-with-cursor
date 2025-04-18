@@ -1,4 +1,13 @@
-# Empty Encore TS Template
+# Report Writer with Cursor
+
+A Vue 3 application for teachers to write student reports using AI-generated comments based on assessment data.
+
+## Features
+
+- Assessment management for Math and English subjects
+- AI-powered report comment generation
+- Student progress tracking
+- Report draft and publishing workflow
 
 ## Developing locally
 
